@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Compare HTML Files with Frames</title>
+	<link rel="stylesheet" href="compare.css">
+		<script>
+		function compareFiles() {
+			var file1 = document.getElementById("file1").value;
+			var file2 = document.getElementById("file2").value;
+
+			if (file1 !== "" && file2 !== "") {
+				document.getElementById("frame1").src = file1;
+				document.getElementById("frame2").src = file2;
+			}
+		}
+	</script>
+</head>
+<body>
+	<select id="file1" onchange="compareFiles()">
+		<option value="">Select File 1</option>
+		<option value="bmw1.html">BMW 8 SERIES GRAN COUPÉ</option>
+		<option value="bmw2.html">BMW 2 series</option>
+		<option value="bmw3.html">BMW iX</option>
+		<option value="bugatti1.html">VEYRON GRAND SPORT</option>
+		<option value="bugatti2.html">CHIRON SUPER SPORT</option>
+		<option value="bugatti3.html">LA VOITURE NOIRE</option>
+		<option value="hyundai1.html">hyundai creta</option>
+		<option value="hyundai2.html">hyundai i20</option>
+		<option value="jaguar1.html">F-Type SVR</option>
+		<option value="jaguar2.html">Jaguar XF R-DYNAMIC SE</option>
+		<option value="kia1.html">kia seltos</option>
+		<option value="kia2.html">kia sonet</option>
+		<option value="lambo1.html">Aventador SVJ LP 770-4</option>
+		<option value="lambo2.html">Huracán STO</option>
+		<option value="lambo3.html">Lamborghini Urus</option>
+		<option value="maruthi1.html">maruthi suzuki swift</option>
+		<option value="maruthi2.html">maruthi suzuki vitara brezza</option>
+		<option value="maruthi3.html">maruthi suzuki ertiga</option>
+	</select>
+
+	<select id="file2" onchange="compareFiles()">
+		<option value="">Select File 2</option>
+		<option value="bmw1.html">BMW 8 SERIES GRAN COUPÉ</option>
+		<option value="bmw2.html">BMW 2 series</option>
+		<option value="bmw3.html">BMW iX</option>
+		<option value="bugatti1.html">VEYRON GRAND SPORT</option>
+		<option value="bugatti2.html">CHIRON SUPER SPORT</option>
+		<option value="bugatti3.html">LA VOITURE NOIRE</option>
+		<option value="hyundai1.html">hyundai creta</option>
+		<option value="hyundai2.html">hyundai i20</option>
+		<option value="jaguar1.html">F-Type SVR</option>
+		<option value="jaguar2.html">Jaguar XF R-DYNAMIC SE</option>
+		<option value="kia1.html">kia seltos</option>
+		<option value="kia2.html">kia sonet</option>
+		<option value="lambo1.html">Aventador SVJ LP 770-4</option>
+		<option value="lambo2.html">Huracán STO</option>
+		<option value="lambo3.html">Lamborghini Urus</option>
+		<option value="maruthi1.html">maruthi suzuki swift</option>
+		<option value="maruthi2.html">maruthi suzuki vitara brezza</option>
+		<option value="maruthi3.html">maruthi suzuki ertiga</option>
+	</select>
+
+	<div style="display: flex;">
+		<iframe id="frame1" src="" style="width:50%; height:100vh;"></iframe>
+		<iframe id="frame2" src="" style="width:50%; height:100vh;"></iframe>
+	</div>
+</body>
+</html>

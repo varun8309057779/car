@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="book.css">
+    
+    <body><form>
+<div class="container">
+    <div class="main-form">
+      <div class="inputs">
+        <h1 class="header">BOOK NOW</h1>
+        <input type="text" id="name" class="username" placeholder=" Full name">
+         <input type="text" id="email"class="username" placeholder="Email id">
+        <input type="text" id="num" class="username" placeholder="mobile number">
+        <input type="text"  class="username" placeholder="car model">
+        <select class="username">
+            <option>SELECT STATE</option>
+            <option>TELANGANA</option>
+            <option>ANDHRA PRADESH</option>
+            <option>BANGLORE</option>
+            <option>TAMIL NADU</option>
+        </select>
+        <input type="submit" onclick="showAlert"> 
+        <h3><a href="pay.html">paynow</a></h3>
+    </form> 
+        <script>
+            function showAlert() {
+                var name = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+                var message = document.getElementById('num').value;
+                alert("mr."+name+"the car model has been sent to"+email)
+              };
+        </script>
+
+      </div>
+    </div>
+  </div>
+</head>
+  </body>
+  </html>
