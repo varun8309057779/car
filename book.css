@@ -27,7 +27,7 @@ body {
 .main-form {
   flex-direction: column;
   width: 900px;
-  height: 600px;
+  height: 650px;
   align-self: center;
   justify-self: center;
   border: 20px solid transparent;
