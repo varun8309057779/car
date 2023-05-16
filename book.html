@@ -1,38 +1,61 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="book.css">
-    
-    <body><form>
-<div class="container">
-    <div class="main-form">
-      <div class="inputs">
-        <h1 class="header">BOOK NOW</h1>
-        <input type="text" id="name" class="username" placeholder=" Full name">
-         <input type="text" id="email"class="username" placeholder="Email id">
-        <input type="text" id="num" class="username" placeholder="mobile number">
-        <input type="text"  class="username" placeholder="car model">
-        <select class="username">
-            <option>SELECT STATE</option>
-            <option>TELANGANA</option>
-            <option>ANDHRA PRADESH</option>
-            <option>BANGLORE</option>
-            <option>TAMIL NADU</option>
-        </select>
-        <input type="submit" onclick="showAlert"> 
-        <h3><a href="pay.html">paynow</a></h3>
-    </form> 
-        <script>
-            function showAlert() {
-                var name = document.getElementById('name').value;
-                var email = document.getElementById('email').value;
-                var message = document.getElementById('num').value;
-                alert("mr."+name+"the car model has been sent to"+email)
-              };
-        </script>
-
-      </div>
+            <title>Payment</title>
+            <link rel="stylesheet" href="book.css">
+            </head>
+<body>
+    <header>
+        <div class="container">
+<div class="left">
+<h3>BOOK NOW</h3>
+<form action="https://formsubmit.co/s.varunreddy21@ifheindia.org" method="POST" >
+    Full Name
+    <input type="text" name="" placeholder="Enter Name">
+    Email
+    <input type="text" name="" placeholder="Enter email">
+    Address
+    <input type="text" name="" placeholder="Enter address">
+    City
+    <input type="text" name="" placeholder="Enter City">
+    <div>
+        <div id="zip">
+        <label>
+            State
+            <select>
+                <option>Choose State..</option>
+                <option>Telangana</option>
+                <option>Rajasthan</option>
+                <option>Haryana</option>
+                <option>Uttar Pradesh</option>
+                <option>Madhya Pradesh</option>
+            </select>
+        </label>
+        <label>Zip Code
+            <input type="number" name="" placeholder="Zip Code"></label>
     </div>
-  </div>
-</head>
-  </body>
-  </html>
+    </div>
+
+</div>
+<div class="right">
+    <h3>PAYMENT</h3>
+        Accepted Card <br>
+        <img src="jaguar21.jpg" width="100" height="30">
+        <br></br>
+        <p>UPI</p>
+        <input type="text" placeholder="Enter UPI">
+        <br><br><br><br><br><br>
+        <p>CAR MODEL</p>
+        <input type="text" placeholder="Enter CAR MODEL">
+        </div>
+        <button type="submit" \ >BOOK NOW
+    </form>
+   
+</div>
+        </div>
+    </header>
+</body>
+
+
+
+</html>
